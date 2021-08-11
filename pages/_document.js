@@ -8,16 +8,7 @@ class MyDocument extends Document {
   render () {
     return (
       <Html>
-        <Head>
-          {/* <title>my app</title> */}
-          <style>
-            {`
-              .test {
-                color: red
-              }
-            `}
-          </style>
-        </Head>
+        <Head/>
         <body className="test">
           <Main/>
           <NextScript/>
