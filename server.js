@@ -8,7 +8,18 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
   const server = new Koa();
-  server.use(async (ctx, next) => {
+  const router = new Router();
+  router.get('/a/:id', async (ctx, next) => {
+    console.log('ctx.params.id', ctx.params.id);
+    const id= ctx.params.id;
+    await handle(ctx.req, ctx.res, {
+      pathname: '/a',
+      query: { id },
+    });
+    ctx.respond = false;
+  })
+  server.use(router.routes())
+  server.use(async (ctx) => {
     await handle(ctx.req, ctx.res);
     ctx.respond = false;
   })
