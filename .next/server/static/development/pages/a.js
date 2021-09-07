@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -855,22 +855,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
+var _this = undefined,
+    _jsxFileName = "D:\\example\\nextJs\\pages\\a.js";
 
 
 
 
+
+
+var Title = styled_components__WEBPACK_IMPORTED_MODULE_3___default.a.h1.withConfig({
+  displayName: "a__Title",
+  componentId: "sc-1ta9xqu-0"
+})(["color:yellow;font-size:40px;"]);
 
 var A = function A(_ref) {
   var router = _ref.router,
       name = _ref.name;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1979455394"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 3
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Title, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 5
+    }
+  }, "this is title"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "jsx-1979455394",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
   }, "A", router.query.id, " ", name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1979455394" + " " + "div"
+    className: "jsx-1979455394" + " " + "div",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 5
+    }
   }, "div"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1979455394"
-  }, "span.jsx-1979455394{color:green;}.div.jsx-1979455394{color:maroon;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxleGFtcGxlXFxuZXh0SnNcXHBhZ2VzXFxhLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVLLEFBSUssQUFHQSxZQUhDLENBR0EiLCJmaWxlIjoiRDpcXGV4YW1wbGVcXG5leHRKc1xccGFnZXNcXGEuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB3aXRoUm91dGVyIH0gZnJvbSAnbmV4dC9yb3V0ZXInO1xuaW1wb3J0IHsgRnJhZ21lbnQgfSBmcm9tICdyZWFjdCc7XG5cbmNvbnN0IEEgPSAoeyByb3V0ZXIsIG5hbWUgfSkgPT4gKFxuICA8RnJhZ21lbnQ+XG4gICAgPHNwYW4+QXtyb3V0ZXIucXVlcnkuaWR9IHtuYW1lfTwvc3Bhbj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cImRpdlwiPmRpdjwvZGl2PlxuICAgIHsvKiDnu4Tku7bmoLflvI8gKi99XG4gICAgPHN0eWxlIGpzeD5cbiAgICB7XG4gICAgIGBcbiAgICAgc3BhbntcbiAgICAgICBjb2xvcjogZ3JlZW5cbiAgICAgfVxuICAgICAuZGl2e1xuICAgICAgIGNvbG9yOiBtYXJvb25cbiAgICAgfVxuICAgICBgIFxuICAgIH1cbiAgICA8L3N0eWxlPlxuICAgIHsvKiDlhajlsYDmoLflvI8gKi99XG4gICAgPHN0eWxlIGdsb2JhbD5cbiAgICB7XG4gICAgIGBcbiAgICAgc3BhbntcbiAgICAgICBiYWNrZ3JvdW5kOiBibHVlXG4gICAgIH1cbiAgICAgYCBcbiAgICB9XG4gICAgPC9zdHlsZT5cbiAgPC9GcmFnbWVudD5cbik7XG5cbkEuZ2V0SW5pdGlhbFByb3BzID0gKGNvbnRleHQpID0+IHtcbiAgcmV0dXJuIHtcbiAgICBuYW1lOiAnTGljaHVubGluJ1xuICB9XG59XG5leHBvcnQgZGVmYXVsdCB3aXRoUm91dGVyKEEpO1xuXG4iXX0= */\n/*@ sourceURL=D:\\example\\nextJs\\pages\\a.js */"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("style", {
-    global: true
+    id: "1979455394",
+    __self: _this
+  }, "span.jsx-1979455394{color:green;}.div.jsx-1979455394{color:maroon;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFxleGFtcGxlXFxuZXh0SnNcXHBhZ2VzXFxhLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWVLLEFBSUssQUFHQSxZQUhDLENBR0EiLCJmaWxlIjoiRDpcXGV4YW1wbGVcXG5leHRKc1xccGFnZXNcXGEuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB3aXRoUm91dGVyIH0gZnJvbSAnbmV4dC9yb3V0ZXInO1xuaW1wb3J0IHsgRnJhZ21lbnQgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgc3R5bGVkICBmcm9tICdzdHlsZWQtY29tcG9uZW50cyc7XG5jb25zdCBUaXRsZSA9IHN0eWxlZC5oMWBcbiAgY29sb3I6IHllbGxvdztcbiAgZm9udC1zaXplOiA0MHB4O1xuYDtcbmNvbnN0IEEgPSAoeyByb3V0ZXIsIG5hbWUgfSkgPT4gKFxuICA8RnJhZ21lbnQ+XG4gICAgPFRpdGxlPnRoaXMgaXMgdGl0bGU8L1RpdGxlPlxuICAgIDxzcGFuPkF7cm91dGVyLnF1ZXJ5LmlkfSB7bmFtZX08L3NwYW4+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJkaXZcIj5kaXY8L2Rpdj5cbiAgICB7Lyog57uE5Lu25qC35byPICovfVxuICAgIDxzdHlsZSBqc3g+XG4gICAge1xuICAgICBgXG4gICAgIHNwYW57XG4gICAgICAgY29sb3I6IGdyZWVuXG4gICAgIH1cbiAgICAgLmRpdntcbiAgICAgICBjb2xvcjogbWFyb29uXG4gICAgIH1cbiAgICAgYCBcbiAgICB9XG4gICAgPC9zdHlsZT5cbiAgICB7Lyog5YWo5bGA5qC35byPICovfVxuICAgIDxzdHlsZSBnbG9iYWw+XG4gICAge1xuICAgICBgXG4gICAgIHNwYW57XG4gICAgICAgYmFja2dyb3VuZDogYmx1ZVxuICAgICB9XG4gICAgIGAgXG4gICAgfVxuICAgIDwvc3R5bGU+XG4gIDwvRnJhZ21lbnQ+XG4pO1xuXG5BLmdldEluaXRpYWxQcm9wcyA9IChjb250ZXh0KSA9PiB7XG4gIHJldHVybiB7XG4gICAgbmFtZTogJ0xpY2h1bmxpbidcbiAgfVxufVxuZXhwb3J0IGRlZmF1bHQgd2l0aFJvdXRlcihBKTtcblxuIl19 */\n/*@ sourceURL=D:\\example\\nextJs\\pages\\a.js */"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("style", {
+    global: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 5
+    }
   }, "\n     span{\n       background: blue\n     }\n     "));
 };
 
@@ -884,7 +927,7 @@ A.getInitialProps = function (context) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!**************************!*\
   !*** multi ./pages/a.js ***!
   \**************************/
@@ -915,6 +958,17 @@ module.exports = require("next/router");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ })
 
