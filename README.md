@@ -7,6 +7,8 @@ React16.8+Next.js+Koa2开发Github全栈教程学习-自撸项目代码
 "atob": "^2.1.2",
 "axios": "^0.18.0",
 "babel-plugin-import": "^1.11.0",
+"babel-plugin-styled-components": "^1.10.0",
+"styled-components": "^4.2.0",
 "cross-env": "^5.2.0",
 "debug": "^4.1.1",
 "http-proxy": "^1.17.0",
