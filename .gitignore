@@ -1,6 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/.next
 # dependencies
 /node_modules
 # roadhog-api-doc ignore
@@ -8,6 +7,8 @@
 _roadhog-api-doc
 
 # production
+/.next
+.next
 /dist
 
 # misc
