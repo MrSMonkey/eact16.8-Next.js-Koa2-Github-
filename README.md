@@ -18,6 +18,7 @@ React16.8+Next.js+Koa2开发Github全栈教程学习-自撸项目代码
 "koa-session": "^5.10.1",
 "lru-cache": "^5.1.1",
 "markdown-it": "^8.4.2",
+"moment": "^2.24.0",
 "next": "^8.0.3",
 "nprogress": "^0.2.0",
 "react": "^16.8.3",
