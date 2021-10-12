@@ -46,4 +46,6 @@ if(typeof require !== 'undefined') {
 }
 // 放入configs
 // module.exports = withCss(configs)
-module.exports = withCss({})
+module.exports = withCss({
+  distDir: 'dist',
+})
