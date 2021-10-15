@@ -1,5 +1,6 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import RuduxThunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
 const ADD = 'ADD';
 
 const countInitialState = {
@@ -49,7 +50,7 @@ const store = createStore(
     counter: countInitialState,
     user: userInitialReducer,
   },
-  applyMiddleware(RuduxThunk)
+  composeWithDevTools(applyMiddleware(RuduxThunk))
 );
 
 console.log(store, store.getState());
