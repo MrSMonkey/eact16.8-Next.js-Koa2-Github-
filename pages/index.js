@@ -3,6 +3,8 @@ import Router from 'next/router';
 import { Button } from 'antd';
 import { Fragment } from 'react';
 
+import store from './../store/store';
+
 const events=[
   'routeChangeStart',
   'routeChangeComplete',
