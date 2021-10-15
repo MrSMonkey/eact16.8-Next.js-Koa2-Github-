@@ -2,6 +2,7 @@ import App, { Container } from 'next/app';
 import 'antd/dist/antd.css';
 import { Provider } from 'react-redux';
 import store from '../store/store';
+import testHoc from '../lib/test-hoc';
 
 class MyApp extends App {
   static async getInitialProps ({ Component, context }) {
@@ -21,8 +22,8 @@ class MyApp extends App {
           <Component {...pageProps}/>
         </Provider>
       </Container>
-    );
+    ); 
   }
 }
 
-export default MyApp;
+export default testHoc(MyApp);
