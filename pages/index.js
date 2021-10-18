@@ -2,9 +2,8 @@ import Link from 'next/link';
 import Router from 'next/router';
 import { Button } from 'antd';
 import { Fragment } from 'react';
-
-import store from './../store/store';
 import { connect } from 'react-redux';
+import { add } from '../store/store';
 
 const events=[
   'routeChangeStart',
@@ -14,7 +13,7 @@ const events=[
   'hashChangeStart',
   'hashChangeComplete',
 ];
-const Index = ({ counter, add }) => (
+const Index = ({ counter, addCount }) => (
   <Fragment>
     <Link href="/a?id=1" as="/a/1">
       <Button>hello next.js</Button>
@@ -23,9 +22,14 @@ const Index = ({ counter, add }) => (
       <span>{counter}</span>
       <span>+</span>
     </div>
-    <Button onClick={() => add(counter)}>add btn</Button>
+    <Button onClick={() => addCount(counter)}>addCount btn</Button>
   </Fragment>
 );
+
+Index.getInitialProps = async ({ reduxStore }) => {
+  reduxStore.dispatch(add(2))
+  return {};
+}
 
 export default connect(
   function mapStateToProps(state) {
@@ -35,7 +39,7 @@ export default connect(
   },
   function mapDispatchToProps(dispatch) {
     return {
-      add: (num) => dispatch({ type: 'ADD', num })
+      addCount: (num) => dispatch({ type: 'ADD', num })
     };
   }
 )(Index);

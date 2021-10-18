@@ -44,39 +44,45 @@ const allReducer = combineReducers({
   user: userReducer,
 })
 
-const store = createStore(
-  allReducer,
-  {
-    counter: countInitialState,
-    user: userInitialReducer,
-  },
-  composeWithDevTools(applyMiddleware(RuduxThunk))
-);
 
-console.log(store, store.getState());
-store.dispatch({ type: UPDATE_USERNAME, name: 'lilei' });
+// console.log(store, store.getState());
+// store.dispatch({ type: UPDATE_USERNAME, name: 'lilei' });
 
 
 // action
-const add = (num) => {
+export const add = (num) => {
   return {
     type: ADD,
     num
   }
 }
 // action
-const addAsync = (num) => {
-  return dispatch => {
-    setTimeout(() => {
-      dispatch(add(num))
-    }, 1000);
-  }
+// const addAsync = (num) => {
+//   return dispatch => {
+//     setTimeout(() => {
+//       dispatch(add(num))
+//     }, 1000);
+//   }
+// }
+
+// store.subscribe(() => {
+//   console.log(store.getState());
+// })
+// store.dispatch(add(3))
+// store.dispatch(addAsync(5))
+
+export default function initializeStore(state) {
+  const store = createStore(
+    allReducer,
+    Object.assign(
+      {},
+      {
+        counter: countInitialState,
+        user: userInitialReducer,
+      },
+      state
+    ),
+    composeWithDevTools(applyMiddleware(RuduxThunk))
+  );
+  return store;
 }
-
-store.subscribe(() => {
-  console.log(store.getState());
-})
-store.dispatch(add(3))
-store.dispatch(addAsync(5))
-
-export default store;

@@ -2,23 +2,24 @@ import App, { Container } from 'next/app';
 import 'antd/dist/antd.css';
 import { Provider } from 'react-redux';
 import store from '../store/store';
-import testHoc from '../lib/test-hoc';
+import withRedux from '../lib/with-redux';
 
 class MyApp extends App {
-  static async getInitialProps ({ Component, context }) {
+  static async getInitialProps (ctx) {
+    const { Component } = ctx
     let pageProps;
     if(Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(context);
+      pageProps = await Component.getInitialProps(ctx);
     }
     return { pageProps };
   }
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps, reduxStore } = this.props;
     // console.log(Component);
 
     return (
       <Container>
-        <Provider store={store}>
+        <Provider store={reduxStore}>
           <Component {...pageProps}/>
         </Provider>
       </Container>
@@ -26,4 +27,4 @@ class MyApp extends App {
   }
 }
 
-export default testHoc(MyApp);
+export default withRedux(MyApp);
